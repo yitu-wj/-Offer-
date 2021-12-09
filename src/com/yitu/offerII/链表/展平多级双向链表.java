@@ -1,7 +1,5 @@
 package com.yitu.offerII.链表;
 
-import com.yitu.offerII.Node;
-
 /**
  * https://leetcode-cn.com/problems/Qv1Da2/
  */
@@ -34,5 +32,11 @@ public class 展平多级双向链表 {
             node = next;
         }
         return tail;
+    }
+    public class Node {
+        public int val;
+        public Node prev;
+        public Node next;
+        public Node child;
     }
 }
