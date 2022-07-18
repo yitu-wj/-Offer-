@@ -22,9 +22,4 @@ public class 爬楼梯的最少成本 {
             dp[i] = Math.min(dp[i - 2], dp[i - 1]) + cost[i];
         }
     }
-
-    public static void main(String[] args) {
-        int i = new 爬楼梯的最少成本().minCostClimbingStairs(new int[]{1, 100});
-        System.out.println(i);
-    }
 }
